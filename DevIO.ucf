@@ -1,0 +1,66 @@
+
+#====================================================
+# FPGA LEDs
+NET "F_LED<3>" LOC = P117; 	
+NET "F_LED<2>" LOC = P116;
+NET "F_LED<1>" LOC = P115;
+NET "F_LED<0>" LOC = P114;
+#====================================================
+# IO Board LEDs
+NET	"IO_LED<0>"	LOC = P47;  
+NET	"IO_LED<1>"	LOC = P48;
+NET	"IO_LED<2>"	LOC = P45;
+NET	"IO_LED<3>"	LOC = P46;
+NET	"IO_LED<4>"	LOC = P43;
+NET	"IO_LED<5>"	LOC = P44;
+NET	"IO_LED<6>"	LOC = P40;
+NET	"IO_LED<7>"	LOC = P41;
+#====================================================
+# IO Board Display Segment a
+NET	"IO_SSEG<0>" LOC = P102; #a
+NET	"IO_SSEG<1>" LOC = P105; #b
+NET	"IO_SSEG<2>" LOC = P101; #c
+NET	"IO_SSEG<3>" LOC = P97;  #d
+NET	"IO_SSEG<4>" LOC = P98;  #e
+NET	"IO_SSEG<5>" LOC = P100; #f
+NET	"IO_SSEG<6>" LOC = P104; #g
+NET	"IO_SSEG<7>" LOC = P99;  #decimal point
+
+#====================================================
+# IO Board Seven Segment Digits
+NET	"IO_SSEGD<0>"	LOC = P92; 
+NET	"IO_SSEGD<1>"	LOC = P93;
+NET	"IO_SSEGD<2>"	LOC = P84;
+NET	"IO_SSEGD<3>"	LOC = P88;
+#====================================================
+# IO Board Seven Segment Display Colon
+NET	"IO_SSEG_COL"	LOC = P87; 
+#====================================================
+# IO Board Pushbutton Switches 
+# Pushbutton Determines which Digit to Enable
+NET	"IO_PB<3>"		LOC = P80	|  PULLUP; 
+NET	"IO_PB<2>"		LOC = P81	|  PULLUP; 
+NET	"IO_PB<1>"		LOC = P78	|  PULLUP;
+NET	"IO_PB<0>"		LOC = P79	|  PULLUP;
+
+#====================================================
+# IO Board Dip Switchs
+NET	"IO_DSW<7>"		LOC = P55	|  PULLUP; 
+NET	"IO_DSW<6>"		LOC = P56	|  PULLUP;
+NET	"IO_DSW<5>"		LOC = P57	|  PULLUP;
+NET	"IO_DSW<4>"		LOC = P58	|  PULLUP;
+NET	"IO_DSW<3>"		LOC = P61	|  PULLUP;
+NET	"IO_DSW<2>"		LOC = P62	|  PULLUP;
+NET	"IO_DSW<1>"		LOC = P66	|  PULLUP;
+NET	"IO_DSW<0>"		LOC = P67	|  PULLUP;
+#====================================================
+# Clock signal 
+NET "M_CLOCK" LOC = P123;
+#====================================================
+# IO Output Pin
+NET "vga_v_sync" LOC = P33; //Pin 3p12
+NET "vga_h_sync" LOC = P35; //Pin 3p11
+NET "pixel<2>" LOC = P15; //Pin 3p5 Red
+NET "pixel<1>" LOC = P12; //Pin 3p4 Green
+NET "pixel<0>" LOC = P10; //Pin 3p3 Blue
+
